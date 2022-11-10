@@ -7,38 +7,51 @@
         <title>CPS - Ремонт техники</title> 
     </head>
     <body>
-        <header class="header-menu">
-            <button class="header-menu__exit-button" alt="Exit"><img src="../../assets/img/burger.svg"></button>
-            <button class="header-menu__logo-button" alt="Logo picture. Go to the main page"><img src="../../assets/img/Group.svg"></button>
-            <button class="header-menu__search-button" alt="Search"><img src="../../assets/img/search.svg"></button>
-        </header>
-        <main class="menu">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><button class="nav__repair-button">Ремонт техники</button></li>
-                    <li class="nav__item"><button class="nav__services-button">Услуги и сервисы</button></li>
-                    <li class="nav__item"><button class="nav__corporation-button">Корпоративным клиент</button></li> 
-                    <li class="nav__item"><button class="nav__sellers-button">Продавцам техники</button></li> 
-                    <li class="nav__item"><button class="nav__partners-button">Партнерам</button></li> 
-                    <li class="nav__item"><button class="nav__manufacturer-button">Производителям</button></li> 
-                    <li class="nav__item"><button class="nav__our-centers-button">Наши сервисные центр</button></li> 
-                    <li class="nav__item"><button class="nav__contacts-button">Контакты</button></li>   
-                </ul>
-            </nav>
-            <div class="contacts">
-                <div class="contacts__wrapper-buttons">
-                    <button class="contacts__call"><img class="contacts__call-pic" src="../../assets/img/call.svg"></button>
-                    <button class="contacts__chat"><img class="contacts__chat-pic" src="../../assets/img/chat.svg"></button>
-                    <button class="contacts__profile"><img class="contacts__profile-pic" src="../../assets/img/profile.svg"></button>
+        <aside class="burger-menu-button">
+            <div class="inner-container">
+            <div class="header">
+                <button class="header__burger" alt="Exit"><img src="././assets/img/burger.svg"></button>
+                <a class="header__logo-link" alt="Logo picture. Go to the main page"><img src="././assets/img/Group.svg"></a>
+                <button class="header__search-button" alt="Search"><img src="././assets/img/search.svg"></button>
+            </div>
+            <div class="menu">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item active"><a class="nav__repair-link">Ремонт техники</a></li>
+                        <li class="nav__item"><a class="nav__services-link">Услуги и сервисы</a></li>
+                        <li class="nav__item"><a class="nav__corporation-link">Корпоративным клиент</a></li> 
+                        <li class="nav__item"><a class="nav__sellers-link">Продавцам техники</a></li> 
+                        <li class="nav__item"><a class="nav__partners-link">Партнерам</a></li> 
+                        <li class="nav__item"><a class="nav__manufacturer-link">Производителям</a></li> 
+                        <li class="nav__item"><a class="nav__our-centers-link">Наши сервисные центр</a></li> 
+                        <li class="nav__item"><a class="nav__contacts-link">Контакты</a></li>   
+                    </ul>
+                </nav>
+                <div class="contacts">
+                    <div class="contacts__wrapper-buttons">
+                        <button class="contacts__call"><img class="contacts__call-pic" src="././assets/img/call.svg"></button>
+                        <button class="contacts__chat"><img class="contacts__chat-pic" src="././assets/img/chat.svg"></button>
+                        <button class="contacts__profile"><img class="contacts__profile-pic" src="././assets/img/profile.svg"></button>
+                    </div>
+                    <a  mail="mail@cps.com" class="contacts__email">mail@cps.com</a>
+                    <a tell="8 800 890 8900" class="contacts__phone-number">8 800 890 8900</a>
                 </div>
-                <span class="contacts__email">mail@cps.com</span>
-                <span class="contacts__phone-number">8 800 890 8900</span>
+                <div class="layout">
+                    <label for="layot__ru"  class="layout__ru-button checked">
+                        <input type="radio" id="layot__ru" name="layot" value="ru"  class="layout__ru-radio" alt="Change to Russian" checked>
+                        RU
+                    </label>
+                    <label for="layot__eu" class="layout__eu-button">
+                        <input type="radio" id="layot__eu" name="layot" value="eu" class="layout__eu-radio" alt="Change to English">
+                        EU
+                    </label>
+                    <label for="layot__ch" class="layout__ch-button">
+                        <input type="radio"  id="layot__ch" name="layot" value="ch" class="layout__ch-radio" alt="Change to Chinese">
+                        CH
+                    </label>
+                </div>
             </div>
-            <div class="layout">
-                <button class="layout__ru-button active" alt="Change to Russian">RU</button>
-                <button class="layout__eu-button" alt="Change to English">EU</button>
-                <button class="layout__ch-button" alt="Change to Chinese">CH</button>
-            </div>
-        </main>
+        </div>
+        </aside>
     </body>
 </html>
